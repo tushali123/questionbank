@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var h=29,m=59;
+        var p=setInterval(function(){
+            document.getElementById("x").innerHTML="Time left "+h+":"+m;
+            m--;
+            if(m==-1){
+                m=59;
+                h--;
+            }
+            if(h==-1){
+                clearInterval(p);
+            }
+        },1000)
+        var rans;
+        var q=["Father of Computer-","Father of C","Java is released in year-","C is released in year-","Newton is-","my fav singer is-","Mitali is-","Do you love tushaliiiiiii?","Mitali jo Aachar laayi wo kis cheez ka bna h?","Mitali pagal h!??"];
+        var op1=["Einstein","Codd","1980","1985","a Scientist","Darshan Raval","Donkey","No","Aloo","Yes"];
+        var op2=["Charles Babbage","James Bond","1971","1971","a Singer","Arijit Singh","Ghodi","Ekdum no","Tamatar","Very very yes"];
+        var op3=["Edison","Dennis Ritchie","1990","1975","an Animal","Jubin Nautiyal","Monkey","Kabhi nahi","Kaddu","Ofcourse haa!!"];
+        var op4=["Abraham Lincoln","Daniel","1995","1969","a Demon","Armaan Malik","Pig","Extremelllyyyy nooooooooo","Karela","Ye bhi koi pucchne ki baat h!!!"];
+        var ans=[2,3,4,2,1,1,3,4,2,4];
+        var c=[0,0,0,0,0,0,0,0,0,0];
+        var index;
+        function b1(){
+            index=0;
+            rans=ans[0];
+            document.getElementById("y").innerHTML=q[0];
+            document.getElementById("m").innerHTML=op1[0];
+            document.getElementById("n").innerHTML=op2[0];
+            document.getElementById("o").innerHTML=op3[0];
+            document.getElementById("p").innerHTML=op4[0];
+        }
+        function b2(){
+            index=1;
+            rans=ans[1];
+            document.getElementById("y").innerHTML=q[1];
+            document.getElementById("m").innerHTML=op1[1];
+            document.getElementById("n").innerHTML=op2[1];
+            document.getElementById("o").innerHTML=op3[1];
+            document.getElementById("p").innerHTML=op4[1];
+        }
+        function b3(){
+            index=2;
+            rans=ans[2];
+            document.getElementById("y").innerHTML=q[2];
+            document.getElementById("m").innerHTML=op1[2];
+            document.getElementById("n").innerHTML=op2[2];
+            document.getElementById("o").innerHTML=op3[2];
+            document.getElementById("p").innerHTML=op4[2];
+        }
+        function b4(){
+            index=3;
+            rans=ans[3];
+            document.getElementById("y").innerHTML=q[3];
+            document.getElementById("m").innerHTML=op1[3];
+            document.getElementById("n").innerHTML=op2[3];
+            document.getElementById("o").innerHTML=op3[3];
+            document.getElementById("p").innerHTML=op4[3];
+        }
+        function b5(){
+            index=4;
+            rans=ans[4];
+            document.getElementById("y").innerHTML=q[4];
+            document.getElementById("m").innerHTML=op1[4];
+            document.getElementById("n").innerHTML=op2[4];
+            document.getElementById("o").innerHTML=op3[4];
+            document.getElementById("p").innerHTML=op4[4];
+        }
+        function b6(){
+            index=5;
+            rans=ans[5];
+            document.getElementById("y").innerHTML=q[5];
+            document.getElementById("m").innerHTML=op1[5];
+            document.getElementById("n").innerHTML=op2[5];
+            document.getElementById("o").innerHTML=op3[5];
+            document.getElementById("p").innerHTML=op4[5];
+        }
+        function b7(){
+            index=6;
+            rans=ans[6];
+            document.getElementById("y").innerHTML=q[6];
+            document.getElementById("m").innerHTML=op1[6];
+            document.getElementById("n").innerHTML=op2[6];
+            document.getElementById("o").innerHTML=op3[6];
+            document.getElementById("p").innerHTML=op4[6];
+        }
+        function b8(){
+            index=7;
+            rans=ans[7];
+            document.getElementById("y").innerHTML=q[7];
+            document.getElementById("m").innerHTML=op1[7];
+            document.getElementById("n").innerHTML=op2[7];
+            document.getElementById("o").innerHTML=op3[7];
+            document.getElementById("p").innerHTML=op4[7];
+        }
+        function b9(){
+            index=8;
+            rans=ans[8];
+            document.getElementById("y").innerHTML=q[8];
+            document.getElementById("m").innerHTML=op1[8];
+            document.getElementById("n").innerHTML=op2[8];
+            document.getElementById("o").innerHTML=op3[8];
+            document.getElementById("p").innerHTML=op4[8];
+        }
+        function b10(){
+            index=9;
+            rans=ans[9];
+            document.getElementById("y").innerHTML=q[9];
+            document.getElementById("m").innerHTML=op1[9];
+            document.getElementById("n").innerHTML=op2[9];
+            document.getElementById("o").innerHTML=op3[9];
+            document.getElementById("p").innerHTML=op4[9];
+            
+        }
+        
+        function answer(){
+            var p="";
+            if(document.getElementById("ms").checked){
+                p=document.getElementById("ms").value;
+            }
+            if(document.getElementById("ns").checked){
+                p=document.getElementById("ns").value;
+            }
+            if(document.getElementById("os").checked){
+                p=document.getElementById("os").value;
+            }
+            if(document.getElementById("ps").checked){
+                p=document.getElementById("ps").value;
+            }
+            if(p==rans){
+                c[index]=1; 
+            }
+            else{
+                c[index]=0;
+            }
+            alert("Answer Submitted");
+        }
+        var sum=0;
+        function finish(){
+            for(i=0;i<c.length;i++){
+                sum=sum+c[i];
+            }
+            alert("Total marks:"+sum+"/10");
+        }
+    </script>
+    <style>
+        .a{
+            width: 5%;
+            height: 30px;   
+            margin-left: 20px;
+            background-color: rgb(88, 170, 238);
+            border: none;
+            border-radius: 5px;
+        }
+        .a:hover{
+            cursor: pointer;
+            background-color: grey;
+            color: white;
+        }
+        .b{
+            color: white;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .c{
+            color: white;
+            margin-top: 40px;
+            margin-left: 30px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;           
+        }
+        .d{
+            color: white;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <p id="x" style="margin-left: 80%; color: white; font-weight:bold ;"></p>
+    <input type="button" value="1" class="a" onclick="b1()">
+    <input type="button" value="2" class="a" onclick="b2()">
+    <input type="button" value="3" class="a" onclick="b3()">
+    <input type="button" value="4" class="a" onclick="b4()">
+    <input type="button" value="5" class="a" onclick="b5()">
+    <input type="button" value="6" class="a" onclick="b6()">
+    <input type="button" value="7" class="a" onclick="b7()">
+    <input type="button" value="8" class="a" onclick="b8()">
+    <input type="button" value="9" class="a" onclick="b9()">
+    <input type="button" value="10" class="a" onclick="b10()">
+    <p id="y" class="c"></p>
+    <input type="radio" name="a" class="b" id="ms"  value="1"><span id="m" class="d"></span><br>
+    <input type="radio" name="a" class="b" id="ns" value="2"><span id="n" class="d"></span><br>
+    <input type="radio" name="a" class="b" id="os" value="3"><span id="o" class="d"></span><br>
+    <input type="radio" name="a" class="b" id="ps" value="4"><span id="p" class="d"></span><br><br>
+    <input type="button" value="Submit" class="a" onclick="answer()">
+    <input type="button" value="Finish" class="a" onclick="finish()">
+    
+</body>
+</html>
